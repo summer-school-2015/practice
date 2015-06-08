@@ -1,3 +1,2 @@
-# Services
-Android background processes 
+# android-background-services-example
 Vladislav Marin
