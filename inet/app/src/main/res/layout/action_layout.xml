@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get my name"
+        android:id="@+id/getMyNameButton"
+        android:onClick="actionMenuOnClick"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idText"
+        android:layout_gravity="center_horizontal"
+        android:numeric="integer"
+        android:hint="Enter id here (1 for example)" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Get name by id"
+        android:onClick="actionMenuOnClick"
+        android:id="@+id/getNameByIdButton" />
+</LinearLayout>
