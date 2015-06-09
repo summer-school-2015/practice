@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/relativeLayout">
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp">
+        <ImageButton
+                android:id="@+id/backward_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_rew"
+                android:textSize="12sp">
+        </ImageButton>
+        <ImageButton
+                android:id="@+id/pause_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_pause"
+                android:textSize="12sp">
+        </ImageButton>
+        <ImageButton
+                android:id="@+id/resume_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_play"
+                android:textSize="12sp">
+        </ImageButton>
+        <ImageButton
+                android:id="@+id/forward_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_ff"
+                android:textSize="12sp">
+        </ImageButton>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="10dp">
+        <CheckBox
+                android:id="@+id/loop_chb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loop">
+        </CheckBox>
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:id="@+id/LinearLayout1">
+        <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_below="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <SeekBar
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/volume"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/volume" android:textSize="24dp" android:textIsSelectable="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

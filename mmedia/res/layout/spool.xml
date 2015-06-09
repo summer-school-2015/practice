@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/playSP1_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onClick"
+                android:text="@string/sp_play1">
+        </Button>
+        <Button
+                android:id="@+id/playSP2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onClick"
+                android:text="@string/sp_play2">
+        </Button>
+        <Button
+                android:id="@+id/playSP3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:onClick="onClick"
+                android:text="@string/sp_play3">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max streams"
+                android:id="@+id/streams_txt" android:textSize="24dp"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/streams_rd">
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_of_stream2"
+            android:text="@string/stream2" />
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_of_stream3"
+            android:text="@string/stream3" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

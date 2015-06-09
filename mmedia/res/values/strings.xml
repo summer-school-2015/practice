@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">multimedia</string>
+        <string name="title_audio">Work with audio</string>
+        <string name="title_video">Work with video</string>
+        <string name="http">HTTP</string>
+        <string name="stream">Stream</string>
+        <string name="sd">SD</string>
+        <string name="uri">Uri</string>
+        <string name="raw">Raw</string>
+        <string name="stop">Stop</string>
+        <string name="loop">Loop</string>
+        <string name="volume">Volume</string>
+        <string name="sp_play1">One</string>
+        <string name="sp_play2">Two</string>
+        <string name="sp_play3">Three</string>
+        <string name="stream2">2</string>
+        <string name="stream3">3</string>
+</resources>

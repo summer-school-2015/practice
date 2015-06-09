@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center">
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/video_view"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_alignParentTop="true">
+        <ImageButton
+                android:id="@+id/backVideo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_rew"
+                android:textSize="12sp"/>
+        <ImageButton
+                android:id="@+id/playVideo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_play"
+                android:textSize="12sp"/>
+        <ImageButton
+                android:id="@+id/pauseVideo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_pause"
+                android:textSize="12sp"/>
+        <ImageButton
+                android:id="@+id/forwVideo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@android:drawable/ic_media_ff"
+                android:textSize="12sp"/>
+    </LinearLayout>
+    <SeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarVideo"/>
+
+</LinearLayout>
