@@ -7,20 +7,55 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.util.Date;
+
 public class MainActivity extends Activity {
+
+    private TextView timeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        timeView=(TextView)findViewById(R.id.textView_Time);
+        t.start();
     }
 
     public void clockwise(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.myanimation);
         image.startAnimation(animation);
+
     }
+
+    public void btnNextLayout_Click(View view){
+        setContentView(R.layout.main);
+    }
+    Thread t = new Thread() {
+
+        @Override
+        public void run() {
+            try {
+                while (!isInterrupted()) {
+                    Thread.sleep(1000);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+                            timeView.setText(currentDateTimeString);
+
+                        }
+                    });
+                }
+            } catch (InterruptedException e) {
+            }
+        }
+    };
+
+
 
     public void zoom(View view){
         ImageView image = (ImageView)findViewById(R.id.imageView);

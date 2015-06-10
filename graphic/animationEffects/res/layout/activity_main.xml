@@ -74,5 +74,18 @@
             android:onClick="slide"
             android:id="@+id/button6"
             android:layout_alignBottom="@+id/button5" android:layout_alignEnd="@+id/textView"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="TIME"
+            android:id="@+id/textView_Time" android:layout_above="@+id/button2" android:layout_alignStart="@+id/imageView"
+            android:layout_alignEnd="@+id/button2"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nextLayout"
+            android:id="@+id/bntNextLayout" android:layout_below="@+id/textView" android:layout_alignParentEnd="true"
+            android:onClick="btnNextLayout_Click"/>
 
 </RelativeLayout>
